@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@2.25.0/dist/full.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="flex h-screen w-full items-center justify-center">
+    <section>
+        <input id="nameInput" type="text" placeholder="Type here" class="input max-w-xs" />
+        <button id="addName" class="btn btn-info">Add Name</button>
+        <button id="removeName" class="btn btn-info">Remove Name</button><br>
+        <input id="emailInput" type="text" placeholder="Type here" class="input  max-w-xs" />
+        <button id="addEmail" class="btn btn-info">Add Email</button>
+        <button id="removeEmail" class="btn btn-info">Remove Email</button> <br>
+        <textarea id="textInput" class="textarea" placeholder="Bio"></textarea>
+        <button id="addText" class="btn btn-info">Add Message</button>
+        <button id="removeText" class="btn btn-info">Delete Message</button> <br>
+       
+            <button onclick="sendAll()" class="btn btn-secondary">Send</button>
+            <button onclick="clearAll()" class="btn btn-primary">Reset</button>
+    
+    </section>
+    <script src="form.js"></script>
+</body>
+</html>

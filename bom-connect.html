@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            height: 100vh;
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+        section{
+            width: 50%;
+            margin: 0 auto;
+        }
+        section input{
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <section>
+        <input id="product" type="text" placeholder="type product name">
+        <button onclick="addProduct()">Add Product</button>
+        <button onclick="removeProduct()">Remove Product</button>
+        <input id='quantity' type="text" placeholder="Quantity">
+        <button onclick="addQuantity()">Add Quantity</button>
+        <button onclick="removeQuantity()">Remove Quantity</button> <br>
+        <button onclick="clearAll()">Clear All</button>
+    </section>
+    <section>
+        <ul id="list-container">
+            <li>List</li>
+        </ul>
+    </section>
+    <script src="app.js"></script>
+</body>
+</html>
